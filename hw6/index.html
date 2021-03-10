@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-2</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #cart {
+            margin: 8px auto 0;
+            width: 1000px;
+            border: 1px solid black;
+            padding: 24px;
+
+        }
+
+        .goods {
+            border: 1px solid;
+            padding: 20px;
+            margin-bottom: 8px;
+
+        }
+
+        .button__clear {
+            background-color: #c4c4c4;
+            padding: 8px;
+            border: 1px solid #c4c4c4;
+            display: inline-block;
+            margin-top: 8px;
+            cursor: pointer;
+            margin-left: calc(50% - 33px);
+        }
+
+        .button__buy {
+            background-color: #c4c4c4;
+            padding: 8px;
+            border: 1px solid #c4c4c4;
+            display: inline-block;
+            margin-top: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            color: #000
+        }
+
+        .photo {
+            width: 100%;
+        }
+
+        .img__box {
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .goods-box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .gallery-box {
+            background: black;
+            width: 500px;
+            height: 500px;
+            position: fixed;
+            top: calc(50% - 250px);
+            left: calc(50% - 250px);
+        }
+
+        .gallery-photo {
+            width: 100%;
+        }
+
+        .gallery-overlay {
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+        }
+
+        .gallery-left {
+            position: absolute;
+            top: 50%;
+            font-size: 36px;
+            left: 16px;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            background-color: rgba(196, 196, 196, 1);
+            line-height: 36px;
+        }
+
+        .gallery-right {
+            position: absolute;
+            top: 50%;
+            font-size: 36px;
+            right: 16px;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            background-color: rgba(196, 196, 196, 1);
+            line-height: 36px;
+        }
+
+        .gallery-close {
+            font-size: 36px;
+            font-weight: 900;
+            position: fixed;
+            top: 50px;
+            right: 50px;
+            font-family: sans-serif;
+            cursor: pointer;
+
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+    <div id="cart"></div>
+    <a class="button__clear">Очистить</a>
+    <div id="catalog"></div>
+</body>
+
+</html>
