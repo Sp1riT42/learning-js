@@ -32,7 +32,6 @@ class GoodList {
         this.sumResult = null
         this.allProducts = [];
         this.fetchGoods();
-        this.sumGoods()
         this.render();
     }
 
@@ -46,11 +45,10 @@ class GoodList {
     }
 
     sumGoods() {
-        this.goods.forEach(item => this.sumResult += item.price)
+        return this.goods.reduce((accum, item) => accum + item.price, 0)
     }
 
     render() {
-        console.log(this.sumResult)
         const block = document.querySelector(this.container);
         for (const good of this.goods) {
             const productObject = new GoodItem(good);
@@ -58,7 +56,7 @@ class GoodList {
             this.allProducts.push(productObject);
             block.insertAdjacentHTML('afterbegin', productObject.render());
         }
-        block.insertAdjacentHTML('afterend', `<h2>Общая стоимость товаров: ${this.sumResult}</h2>`)
+        block.insertAdjacentHTML('afterend', `<h2>Общая стоимость товаров: ${this.sumGoods()}</h2>`)
     }
 }
 
@@ -117,43 +115,38 @@ class Hamburger {
         this.render()
     }
     getToppings() {   /* Получить список добавок */
-        let toppingList = document.querySelectorAll('.hamburger__topping')
+        const toppingList = document.querySelectorAll('input:checked.hamburger__topping')
         this.topping = []
         for (let i = 0; i < toppingList.length; i++) {
-            if (toppingList[i].checked) {
-                for (let j = 0; j < this.toppingAvalible.length; j++) {
-                    if (toppingList[i].id === this.toppingAvalible[j].id) {
-                        this.topping.push(this.toppingAvalible[j])
-                    }
+            for (let j = 0; j < this.toppingAvalible.length; j++) {
+                if (toppingList[i].id === this.toppingAvalible[j].id) {
+                    this.topping.push(this.toppingAvalible[j])
                 }
             }
+
         }
     }
     getSize() {              /* Узнать размер гамбургера */
-        let sizeList = document.querySelectorAll('.hamburger__size')
-        for (let i = 0; i < sizeList.length; i++) {
-            if (sizeList[i].checked) {
-                for (let j = 0; j < this.sizeAvalible.length; j++) {
-                    if (sizeList[i].id === this.sizeAvalible[j].id) {
-                        this.size = this.sizeAvalible[j]
-                    }
-                }
+        let sizeList = document.querySelector('input:checked.hamburger__size')
+        for (let j = 0; j < this.sizeAvalible.length; j++) {
+            if (sizeList.id === this.sizeAvalible[j].id) {
+                this.size = this.sizeAvalible[j]
             }
         }
+
+
     }
 
     getStuffing() {
         /* Узнать начинку гамбургера */
-        let stuffingList = document.querySelectorAll('.hamburger__stuffing')
-        for (let i = 0; i < stuffingList.length; i++) {
-            if (stuffingList[i].checked) {
-                for (let j = 0; j < this.stuffingAvalible.length; j++) {
-                    if (stuffingList[i].id === this.stuffingAvalible[j].id) {
-                        this.stuffing = this.stuffingAvalible[j]
-                    }
-                }
+        let stuffingList = document.querySelector('input:checked.hamburger__stuffing')
+        for (let j = 0; j < this.stuffingAvalible.length; j++) {
+            if (stuffingList.id === this.stuffingAvalible[j].id) {
+                this.stuffing = this.stuffingAvalible[j]
             }
         }
+
+
     }
     calculatePrice() {       /* Узнать цену */
         let sum = this.size.price + this.stuffing.price
