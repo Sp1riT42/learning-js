@@ -29,7 +29,6 @@ class GoodList {
     constructor(container = '.goods-list') {
         this.container = container;
         this.goods = [];
-        this.sumResult = null
         this.allProducts = [];
         this.fetchGoods();
         this.render();
