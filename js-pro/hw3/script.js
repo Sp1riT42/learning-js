@@ -48,6 +48,7 @@ class GoodList {
             for (let i = 0; i < this.goods.length; i++) {
                 if (this.goods[i].id_product === idElem) {
                     const idxGoods = this.cart.goods.findIndex(item => item.id_product === idElem)
+                    this.cart.allProducts = []
                     if (idxGoods === -1) {
                         this.goods[i].quantity = 1
                         this.cart.goods.push(this.goods[i])
@@ -124,6 +125,7 @@ class Cart {
             for (let i = 0; i < this.goods.length; i++) {
                 if (this.goods[i].id_product === idElem) {
                     this.goods.splice(i, 1)
+                    this.allProducts = []
                     document.querySelector(this.container).innerHTML = ''
                     this.render()
                     break
@@ -136,6 +138,7 @@ class Cart {
         if (event.target.classList.contains('goods-item__button-all-clear')) {
             document.querySelector(this.container).innerHTML = ''
             this.goods = []
+            this.allProducts = []
             this.render()
         }
     }
@@ -152,13 +155,10 @@ class Cart {
     }
 }
 
-class CartItem {
+class CartItem extends GoodItem {
     constructor(product, img = 'https://via.placeholder.com/200x150') {
-        this.title = product.product_name;
-        this.price = product.price;
-        this.id = product.id_product;
+        super(product)
         this.quantity = product.quantity;
-        this.img = img;
     }
     render() {
         return `<div class="goods-item" data-id="${this.id}">
