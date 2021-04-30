@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+$width: 1140px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    font-weight: 300;
+}
+.wrapper {
+    background: #50a3a2;
+    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+    height: 100vh;
+    padding-top: 10%;
+}
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 0 auto;
+    //padding-left: calc(50% - #{$width/6});
+    // padding-right: calc(50% - #{$width/6});
+
+    &__btn {
+        margin: 16px auto 0;
+        width: 200px;
+        height: 50px;
+        appearance: none;
+        outline: 0;
+        background-color: white;
+        border: 0;
+        padding: 10px 15px;
+        color: #53e3a6;
+        border-radius: 3px;
+        width: 250px;
+        cursor: pointer;
+        font-size: 18px;
+        transition-duration: 0.25s;
+
+        &:hover {
+            background-color: rgb(245, 247, 249);
+        }
+    }
+    &__text {
+        margin-top: 24px;
+        height: 150px;
+        border-radius: 3px;
+        padding: 10px 15px;
+        font-weight: 200;
+        font-size: 18px;
+        border: 1px solid rgba($color: #fff, $alpha: 0.4);
+        background-color: rgba($color: #fff, $alpha: 0.2);
+        outline: none;
+        &:focus {
+            border: 1px solid rgba($color: #fff, $alpha: 0.8);
+        }
+        &::placeholder {
+            font-family: "Source Sans Pro", sans-serif;
+            color: white;
+            font-weight: 300;
+        }
+    }
+    &__name {
+        &_err {
+        }
+    }
+}
+.err {
+    border: 1px solid rgba($color: rgb(255, 78, 78), $alpha: 0.6);
+    // background-color: rgba($color: rgb(214, 61, 61), $alpha: 0.6);
+    &:focus {
+        border: 1px solid rgba($color: rgb(255, 78, 78), $alpha: 1);
+    }
+}
+.hide {
+    display: none;
+}
+p {
+    font-size: 12px;
+    padding: 4px 8px 0 8px;
+    color: #fd4949;
+    font-weight: 600;
+}
+label {
+    margin-bottom: 8px;
+}
+input {
+    margin-top: 24px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 1px solid rgba($color: #fff, $alpha: 0.4);
+    background-color: rgba($color: #fff, $alpha: 0.2);
+    outline: none;
+
+    &:focus {
+        border: 1px solid rgba($color: #fff, $alpha: 0.8);
+    }
+    &::placeholder {
+        font-family: "Source Sans Pro", sans-serif;
+        color: white;
+        font-weight: 300;
+    }
+}
