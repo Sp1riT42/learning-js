@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>home work 1</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form class="form" id="form" action="#">
+            <input class="form__name" type="text" id="name" placeholder="Иван">
+            <p class="form__name-err hide">Имя должно соделжать только буквы</p>
+            <input class="form__phone" type="tel" id="phone" placeholder="+7(000)000-0000">
+            <p class="form__phone-err hide">Телефон должен иметь вид:<br>+7(000)000-0000</p>
+            <input class="form__email" type="email" id="email" placeholder="mymail@mail.ru">
+            <p class="form__email-err hide">E-mail должен иметь
+                вид:<br>mymail@mail.ru<br>my.mail@mail.ru<br>my-mail@mail.ru</p>
+            <textarea class="form__text" name="" id="about" cols="30" rows="10"
+                placeholder="Расскажите о себе..."></textarea>
+            <button class="form__btn" type="submit">Отправить</button>
+        </form>
+    </div>
+</body>
+
+</html>
