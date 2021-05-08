@@ -14,7 +14,7 @@
             <div class="logo">Интернет-магазин</div>
             <div class="cart">
                 <form action="#" class="search-form">
-                    <input type="text" class="search-field" v-model="searchLine">
+                    <input type="text" class="search-field" v-model="searchLine" v-on:keyup="filterGoods">
                     <button class="btn-search" type="submit" v-on:click.prevent="filterGoods">
                         <i class="fas fa-search"></i>
                     </button>
@@ -59,9 +59,9 @@
 
         </main>
     </div>
-    <script src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+    <!-- <script src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
         integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/main.js"></script>
 </body>

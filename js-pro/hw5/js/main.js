@@ -46,7 +46,9 @@ const app = new Vue({
       this.isVisibleCart = !this.isVisibleCart
     },
     removCartItem(product) {
+
       const rmwItem = this.cartProducts.findIndex(item => item.id_product === product.id_product)
+      console.log(product === this.cartProducts[rmwItem])
       if (this.cartProducts[rmwItem].quantity > 1) {
         this.cartProducts[rmwItem].quantity--
       } else {
