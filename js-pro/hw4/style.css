@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: Roboto, sans-serif;
 }
 
@@ -15,7 +14,6 @@ body {
 
 .wrapper {
   background: #50a3a2;
-  background: -webkit-gradient(linear, left top, right bottom, from(#50a3a2), to(#53e3a6));
   background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
   height: 100vh;
   padding-top: 10%;
@@ -23,24 +21,16 @@ body {
 
 .form {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 250px;
   margin: 0 auto;
 }
-
 .form__btn {
   margin: 16px auto 0;
   width: 200px;
   height: 50px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   outline: 0;
   background-color: white;
   border: 0;
@@ -50,14 +40,11 @@ body {
   width: 250px;
   cursor: pointer;
   font-size: 18px;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
+  transition-duration: 0.25s;
 }
-
 .form__btn:hover {
   background-color: #f5f7f9;
 }
-
 .form__text {
   margin-top: 24px;
   height: 150px;
@@ -69,39 +56,17 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   outline: none;
 }
-
 .form__text:focus {
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
-
-.form__text::-webkit-input-placeholder {
-  font-family: "Source Sans Pro", sans-serif;
-  color: white;
-  font-weight: 300;
-}
-
-.form__text:-ms-input-placeholder {
-  font-family: "Source Sans Pro", sans-serif;
-  color: white;
-  font-weight: 300;
-}
-
-.form__text::-ms-input-placeholder {
-  font-family: "Source Sans Pro", sans-serif;
-  color: white;
-  font-weight: 300;
-}
-
 .form__text::placeholder {
   font-family: "Source Sans Pro", sans-serif;
   color: white;
   font-weight: 300;
 }
-
 .err {
   border: 1px solid rgba(255, 78, 78, 0.6);
 }
-
 .err:focus {
   border: 1px solid #ff4e4e;
 }
@@ -132,32 +97,13 @@ input {
   background-color: rgba(255, 255, 255, 0.2);
   outline: none;
 }
-
 input:focus {
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
-
-input::-webkit-input-placeholder {
-  font-family: "Source Sans Pro", sans-serif;
-  color: white;
-  font-weight: 300;
-}
-
-input:-ms-input-placeholder {
-  font-family: "Source Sans Pro", sans-serif;
-  color: white;
-  font-weight: 300;
-}
-
-input::-ms-input-placeholder {
-  font-family: "Source Sans Pro", sans-serif;
-  color: white;
-  font-weight: 300;
-}
-
 input::placeholder {
   font-family: "Source Sans Pro", sans-serif;
   color: white;
   font-weight: 300;
 }
+
 /*# sourceMappingURL=style.css.map */

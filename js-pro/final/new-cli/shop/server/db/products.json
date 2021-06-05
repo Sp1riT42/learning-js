@@ -1,0 +1,110 @@
+[
+  {
+    "id_product": 1,
+    "img": "./img/card-1.png",
+    "product_name": "Куртка",
+    "price": 52
+  },
+  {
+    "id_product": 2,
+    "img": "./img/card-2.png",
+    "product_name": "Туфли",
+    "price": 62
+  },
+  {
+    "id_product": 3,
+    "img": "./img/card-3.png",
+    "product_name": "Куртка и панамка",
+    "price": 32
+  },
+  {
+    "id_product": 4,
+    "img": "./img/card-4.png",
+    "product_name": "Футболка",
+    "price": 32
+  },
+  {
+    "id_product": 5,
+    "img": "./img/card-5.png",
+    "product_name": "ELLERY X M'O CAPSULE",
+    "price": 32
+  },
+  {
+    "id_product": 6,
+    "img": "./img/card-6.png",
+    "product_name": "ELLERY X M'O CAPSULE",
+    "price": 32
+  },
+  {
+    "id_product": 22,
+    "img": "./img/card-22.png",
+    "product_name": "ELLERY X M'O CAPSULE",
+    "price": 32
+  },
+  {
+    "id_product": 55,
+    "img": "./img/card-55.png",
+    "product_name": "Футболка",
+    "price": 32
+  },
+  {
+    "id_product": 66,
+    "img": "./img/card-66.png",
+    "product_name": "Футболка",
+    "price": 32
+  },
+  {
+    "id_product": 77,
+    "img": "./img/card-77.png",
+    "product_name": "ELLERY X M'O CAPSULE",
+    "price": 32
+  },
+  {
+    "id_product": 88,
+    "img": "./img/card-88.png",
+    "product_name": "ELLERY X M'O CAPSULE",
+    "price": 32
+  },
+  {
+    "id_product": 99,
+    "img": "./img/card-99.png",
+    "product_name": "ELLERY X M'O CAPSULE",
+    "price": 32
+  },
+  {
+    "id_product": 100,
+    "img": "./img/card-99.png",
+    "product_name": "ELLERY X M'O CAPSULE",
+    "price": 32
+  },
+  {
+    "id_product": 101,
+    "img": "./img/card-99.png",
+    "product_name": "ELLERY X M'O CAPSULE",
+    "price": 32
+  },
+  {
+    "id_product": 102,
+    "img": "./img/card-99.png",
+    "product_name": "ELLERY X M'O CAPSULE",
+    "price": 32
+  },
+  {
+    "id_product": 103,
+    "img": "./img/card-99.png",
+    "product_name": "ELLERY X M'O CAPSULE",
+    "price": 32
+  },
+  {
+    "id_product": 104,
+    "img": "./img/card-99.png",
+    "product_name": "ELLERY X M'O CAPSULE",
+    "price": 32
+  },
+  {
+    "id_product": 105,
+    "img": "./img/card-99.png",
+    "product_name": "ELLERY X M'O CAPSULE",
+    "price": 32
+  }
+]
