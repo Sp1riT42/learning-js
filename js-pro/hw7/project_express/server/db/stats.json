@@ -1,0 +1,32 @@
+[
+    {
+        "action": "DELETE",
+        "product": "Keyboard",
+        "time": "2021-05-12T13:47:13.179Z"
+    },
+    {
+        "action": "DELETE",
+        "product": "Keyboard",
+        "time": "2021-05-12T13:47:14.914Z"
+    },
+    {
+        "action": "DELETE",
+        "product": "Keyboard",
+        "time": "2021-05-12T13:47:16.298Z"
+    },
+    {
+        "action": "DELETE",
+        "product": "Keyboard",
+        "time": "2021-05-12T13:47:16.461Z"
+    },
+    {
+        "action": "DELETE",
+        "product": "Gamepad",
+        "time": "2021-05-12T13:47:16.632Z"
+    },
+    {
+        "action": "POST",
+        "product": "Keyboard",
+        "time": "2021-05-12T13:47:18.511Z"
+    }
+]
